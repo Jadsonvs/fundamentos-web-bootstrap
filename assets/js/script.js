@@ -72,11 +72,22 @@ function validaAssunto(){
     }
 }
 
+
+
 function enviar(){
     if(nomeOk == true && emailOk == true && assuntoOk == true){
-        alert("Formulário enviado com sucesso!")
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Formulário enviado com sucesso!',
+            showConfirmButton: false,
+            timer: 1500
+          })
     }else{
-        alert("Preencha o formulário corretamente antes de enviar...")
+        Swal.fire({
+            icon: 'error',
+            title: 'Preencha o formulário corretamente antes de enviar...',
+          })
     }
 }
 
@@ -89,3 +100,4 @@ function mapaNormal(){
     mapa.style.width = "400px"
     mapa.style.height = "250px"
 }
+
