@@ -72,8 +72,6 @@ function validaAssunto(){
     }
 }
 
-
-
 function enviar(){
     if(nomeOk == true && emailOk == true && assuntoOk == true){
         Swal.fire({
